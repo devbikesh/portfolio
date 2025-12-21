@@ -4,98 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Document</title>
-
-<style>
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    body{
-        font-family: Arial, sans-serif;
-        background-color: rgb(107, 193, 240);
-    }
-.container{
-    background-color: rgb(127, 14, 14);
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 80px;
-    box-sizing: border-box;
-    padding: 20px;
-    
-
-   
-}
-.logo h2{
-    font-size: 24px;
-    font-weight: bold;
-    color: rgb(6, 6, 6);
-    margin-left: 20px;
-    float: left;
-    position: relative;
-    top: -10px;
-    
-}
-
-nav{
-    display: flex;
-    justify-content: flex-end;
-    gap: 50px;
-    padding: 10px;
-    margin-left: 500px;
-    margin-right: 20px;
-    
-    
-
-    
-}
-
-nav a{
-    text-decoration: none;
-    color: black;
-    font-size: 18px;
-}
-
-nav a:hover{
-    color: azure;
-    cursor: pointer;
-}
-img{
-    position: relative;
-    width: 200px;
-    top: 82px;
-    box-sizing: border-box;
-    border: 2px double black ;
-    float:left ;
-    z-index: -1;
-
-}
-p{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: rgb(60, 6, 6);
-    
-}
-.para p{
-    position: relative;
-    top: 100px;
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    border: 3px solid rgb(8, 0, 0);
-    height: auto;
-    padding: 20px;
-    box-sizing: border-box;
-    margin-left: 200px;
-    text-align: justify;
-    box-sizing: border-box;
-}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
+<header>
 <div class="container">
     <div class="logo">
         <h2>Bikesh Gautam</h2>
@@ -107,17 +20,20 @@ p{
         <a href="#">Us</a>
     </nav>
 </div>
+</header>   
 <section>
-    <div class="img">
+    <div class="content">
         <a href="https://www.facebook.com/">
         <img src="yo.jpg" alt="me"></a>
-    </div>
-</section>
-<section>
+    
+
     <div class="para">
         <p>I’m Bikesh Gautam, a BCA student and an aspiring software engineer with a strong interest in web development, programming, and logical problem solving. I enjoy tackling coding challenges that push me to improve my logic and technical skills.
 </p>
+    </div>
+    </div>
     </section>
+    
 
 </body>
 </html>
