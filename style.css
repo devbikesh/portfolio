@@ -1,74 +1,217 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap');
+
 *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    body{
-        font-family: Arial, sans-serif;
-        background-color: rgb(107, 193, 240);
-    }
-.container{
-    background-color: rgb(127, 14, 14);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #0f172a; 
+    color: #f8fafc;
+    line-height: 1.6;
+    padding-bottom: 100px; 
+}
+
+
+.container {
+    background-color: #1e293b;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     height: 80px;
-    box-sizing: border-box;
-    padding: 20px;
+    padding: 0 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
-
-   
+    border-bottom: 2px solid #e11d48; 
+    z-index: 2000;
 }
-.logo h2{
-    font-size: 24px;
+
+.logo h2 {
+    font-size: 26px;
     font-weight: bold;
-    color: rgb(6, 6, 6);
-    
-    
+    color: #e11d48;
+    letter-spacing: -1px;
 }
 
-nav{
+nav {
     display: flex;
     gap: 40px;
 }
 
-nav a{
+nav a {
     text-decoration: none;
-    color: black;
+    color: #cbd5e1;
+    font-size: 17px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #e11d48;
+}
+
+
+.content {
+    display: flex;
+    align-items: stretch; 
+    justify-content: center;
+    margin-top: 140px;
+    padding: 0 50px;
+    gap: 30px;
+}
+
+
+.content img {
+    width: 240px;
+    height: 100%; 
+    min-height: 250px;
+    object-fit: cover;
+    border: 2px solid #334155;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.content img:hover {
+    transform: scale(1.03);
+    border-color: #e11d48;
+}
+
+
+.para {
+    flex: 2; 
+    max-width: 600px;
+    padding: 35px;
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.para:hover {
+    transform: translateY(-8px);
+    border-color: #e11d48;
+}
+
+.para p {
+    font-size: 18px;
+    color: #e2e8f0;
+    text-align: justify;
+}
+
+
+.skills {
+    flex: 1;
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    padding: 35px;
+    min-width: 280px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.skills:hover {
+    transform: translateY(-8px);
+    border-color: #e11d48;
+}
+
+.skills h3 {
+    color: #e11d48;
+    font-size: 22px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e11d48;
+    display: inline-block;
+}
+
+.skills ul {
+    list-style: none;
+}
+
+.skills li {
+    font-size: 17px;
+    margin-bottom: 15px;
+    color: #f1f5f9;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.skills li i {
+    color: #e11d48; 
     font-size: 18px;
 }
 
-nav a:hover{
-    color: azure;
-    cursor: pointer;
-}
-.content{
+
+footer {
+    background-color: #1e293b;
+    border-top: 1px solid #334155;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
     display: flex;
-    align-items: flex-start; 
-    margin-top: 120px;
-    margin-left: 30px;
-    gap: 40px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    z-index: 1000;
 }
 
-.content img{
-    width: 240px;
-    height: 250px;
-    border: 2px double black;
-}
-.para{
-    width: 600px;
-    padding: 20px;
-    border: 3px solid rgb(8, 0, 0);
-    background-color: black;
+footer p {
+    color: #94a3b8;
+    font-size: 14px;
 }
 
-.para p{
-    font-size: 20px;
-    color: rgb(225, 18, 18);
-    line-height: 1.6;
-    text-align: justify;
+.media {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.media a {
+    text-decoration: none;
+    transition: transform 0.2s ease;
+}
+
+.media a:hover {
+    transform: translateY(-3px);
+}
+
+.media i {
+    font-size: 22px;
+    color: #cbd5e1;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+.media a:hover i {
+    color: #e11d48; 
+}
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #e11d48; 
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #be123c; 
+    transform: scale(1.05);
+}
+
+.btn i {
+    margin-left: 8px;
+    font-size: 14px;
 }
